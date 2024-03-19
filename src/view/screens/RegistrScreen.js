@@ -6,11 +6,10 @@ import { ALERT_TYPE, Dialog, AlertNotificationRoot } from 'react-native-alert-no
 import Button from '../components/button';
 import Input from '../components/input';
 import Loader from '../components/loader';
-import Logo from '../../images/travel.png';
+import Logo from '../../images/logo.png';
 
 const RegistrScreen = ({ navigation }) => {
     const [input, setInputs] = React.useState({
-        name: "",
         email: "",
         surname: "",
         phone: "",
@@ -26,12 +25,8 @@ const RegistrScreen = ({ navigation }) => {
         console.log(input);
         let isValid = true;
 
-        if(!input.name){
-            handleError("Please enter the name", "name")
-            isValid = false
-        }
         if(!input.surname){
-            handleError("Please enter the surname", "surname")
+            handleError("Please enter the Username", "surname")
             isValid = false
         }
         if(!input.phone){
@@ -109,21 +104,10 @@ const RegistrScreen = ({ navigation }) => {
             <ScrollView contentContainerStyle = {style.scrollContainer}>
             <Image style = {style.image} source = {Logo}>
             </Image>
-            
-            <Text style = {style.textTitle}>
-                Registration Form
-            </Text>
 
-            <Input 
-                iconName= 'id-badge' 
-                placeholder = "Enter your Name" 
-                onChangeText = {(text) => handleOnChange(text, "name")}
-                onFocus = {() => handleError(null, "name")}
-                error = {errors.name}
-            />
             <Input  
                 iconName = 'user'  
-                placeholder = "Enter your Surname"
+                placeholder = "Enter your Username"
                 onChangeText = {(text) => handleOnChange(text, "surname")}
                 onFocus = {() => handleError(null, "surname")}
                 error = {errors.surname}

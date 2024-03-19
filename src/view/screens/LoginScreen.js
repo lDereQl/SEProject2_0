@@ -6,7 +6,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import Button from '../components/button';
 import Input from '../components/input';
 import Loader from '../components/loader';
-import Logo from '../../images/travel.png';
+import Logo from '../../images/logo.png';
 
 const LoginScreen = ({navigation}) => {
 
@@ -110,9 +110,7 @@ const LoginScreen = ({navigation}) => {
         <Loader visible = {loading}/>
           <ScrollView style = {style.svContainer}>
             <Image style = {style.image} source = {Logo}></Image>
-            <Text style = {style.textTitle}>
-                Login Form
-            </Text>
+            
             <View style = {style.viewContainer}>
             <Input 
                 iconName = 'envelope'
