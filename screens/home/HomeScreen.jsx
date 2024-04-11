@@ -1,10 +1,33 @@
-import { View, Text } from 'react-native';
+import { View, SafeAreaView, TouchableOpacity } from 'react-native';
+import reusable  from '../../components/Reusable/reusable.style'
+import ReusableText from '../../components/Reusable/ReusableText'
+import { SIZES, COLORS } from '../../constants/theme'
+import { AntDesign } from "@expo/vector-icons"
+import home from './home.style';
 
-const HomeScreen = () => {
+const HomeScreen = ({ navigation }) => {
     return (
-      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-        <Text>Home Screen</Text>
-      </View>
+      <SafeAreaView style={reusable.container}>
+        <View>
+          <View style={reusable.rowWithSpace('space-between')}>
+            <ReusableText
+              text={'Hey User!'}
+              family={"regular"}
+              size={SIZES.xxLarge}
+              color={COLORS.black}
+            />
+
+            <TouchableOpacity style={home.box}
+              onPress={() => navigation.navigate("Settings")}>
+              <AntDesign
+                name='setting'
+                size={26}
+              />
+            </TouchableOpacity>
+
+          </View>
+        </View>
+      </SafeAreaView>
     );
   }
 
