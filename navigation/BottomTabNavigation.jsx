@@ -1,7 +1,7 @@
 import { View, Text } from 'react-native'
 import React from 'react'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
-import { HomeScreen, Location, Chat, Profile } from '../screens';
+import { HomeScreen, Location, Search, Profile } from '../screens';
 import {Ionicons} from '@expo/vector-icons'
 import { COLORS } from '../constants/theme';
 
@@ -54,18 +54,19 @@ const BottomTabNavigation = () => {
         }}/>
 
         <Tab.Screen
-        name='Message' component = {Chat} options={{
+        name='Search' component = {Search} options={{
             tabBarStyle: tabBarStyle,
             tabBarShowLabel: false,
             headerShown: false,
             tabBarIcon: ({focused}) => (
                 <Ionicons
-                    name={"chatbox-ellipses-outline"}
+                    name={"search"}
                     color={focused ? COLORS.red : COLORS.gray}
                     size = {26}
                 />
             )
-        }}/>
+        }}
+        />
 
         <Tab.Screen
         name='Profile' component = {Profile} options={{

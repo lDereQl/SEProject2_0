@@ -1,12 +1,12 @@
 import { View, Text } from 'react-native'
 import React from 'react'
 
-const Chat = () => {
+const Settings = () => {
   return (
     <View>
-      <Text>Chat</Text>
+      <Text>Settings</Text>
     </View>
   )
 }
 
-export default Chat
+export default Settings
