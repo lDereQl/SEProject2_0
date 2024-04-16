@@ -5,6 +5,8 @@ import Location from "./location/Location"
 import Profile from "./profile/Profile"
 import Search from './search/Search'
 import Settings from './settings/Settings'
+import EventDetails from './details/EventDetails'
+import Recommended from './details/Recommended'
 
 export {
     HomeScreen,
@@ -13,5 +15,7 @@ export {
     Location,
     Profile,
     Search,
-    Settings
+    Settings,
+    EventDetails,
+    Recommended
 }
