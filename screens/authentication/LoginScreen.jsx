@@ -3,10 +3,10 @@ import { StyleSheet, SafeAreaView, View, Text, ScrollView, Image } from 'react-n
 import { ALERT_TYPE, Dialog, AlertNotificationRoot, Toast } from 'react-native-alert-notification';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
-import Button from '../components/button';
-import Input from '../components/input';
-import Loader from '../components/loader';
-import Logo from '../../images/logo.png';
+import Button from '../../components/Buttons/button';
+import Input from '../../components/Inputs/input';
+import Loader from '../../components/Loader/loader';
+import Logo from '../../assets/images/logo.png';
 
 const LoginScreen = ({navigation}) => {
 
@@ -67,7 +67,7 @@ const LoginScreen = ({navigation}) => {
               if(input.email == userData.email &&
                 input.password == userData.password)
               {
-                navigation.navigate("HomeScreen");
+                navigation.navigate("Bottom");
                 AsyncStorage.setItem(
                   "userData",
                   JSON.stringify({...userData, loggedIn: true})
@@ -129,7 +129,7 @@ const LoginScreen = ({navigation}) => {
             </View>
             <Button title = "Login" onPress = {validate}/>
             <Text style = {style.signin} onPress = {() => 
-              navigation.navigate("RegistrScreen")}>Sign in</Text>
+              navigation.navigate("Register")}>Sign in</Text>
           </ScrollView>
         </SafeAreaView>
       </AlertNotificationRoot>

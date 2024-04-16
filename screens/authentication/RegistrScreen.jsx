@@ -3,10 +3,10 @@ import { SafeAreaView, ScrollView, StyleSheet, Text, Image } from 'react-native'
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { ALERT_TYPE, Dialog, AlertNotificationRoot } from 'react-native-alert-notification';
 
-import Button from '../components/button';
-import Input from '../components/input';
-import Loader from '../components/loader';
-import Logo from '../../images/logo.png';
+import Button from '../../components/Buttons/button';
+import Input from '../../components/Inputs/input';
+import Loader from '../../components/Loader/loader';
+import Logo from '../../assets/images/logo.png';
 
 const RegistrScreen = ({ navigation }) => {
     const [input, setInputs] = React.useState({
@@ -75,7 +75,7 @@ const RegistrScreen = ({ navigation }) => {
                     textBody: "Congrats! this is dialog box success",
                     button: "close",
                     onHide: () => {
-                        navigation.navigate("LoginScreen")
+                        navigation.navigate("Login")
                     },
                 });
             } catch (error) {
