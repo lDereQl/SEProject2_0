@@ -46,7 +46,7 @@ const ReusableTile = ({item, onPress}) => {
                 <Rating rating={item.rating}/>
                 <WidthSpacer width={5}/>
                 <ReusableText
-                  text={`${item.reviews}`}
+                  text={`(${item.review})`}
                   family={"medium"}
                   size={14}
                   color={COLORS.gray}

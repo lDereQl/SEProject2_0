@@ -15,7 +15,7 @@ const Recomendations = () => {
             "country_id": "64c62bfc65af9f8c969a8d04",
             "title": "Walt Disney World",
             "location": "U.S.A New Yourk",
-            "imageUrl": "https://d326fntlu7tb1e.cloudfront.net/uploads/731e1f89-c028-43ef-97ee-8beabde696b6-vinci_01_disney.jpg",
+            "imageUrl": "../../assets/images/disnay.jpg",
             "rating": 4.7,
             "review": "1204 Reviews"
         },
@@ -43,15 +43,6 @@ const Recomendations = () => {
             "title": "Yellowstone National Park",
             "location": "U.S.A New Yourk",
             "imageUrl": "https://d326fntlu7tb1e.cloudfront.net/uploads/f3f44363-f250-4002-88a8-19fe79169cc7-geyser-yelowstone-burst_h.webp",
-            "rating": 4.8,
-            "review": "24455 Reviews"
-        },
-        {
-            "_id": "64d30f789d008909fa8b7ce5",
-            "country_id": "64d2fd32618522e2fb342eec",
-            "location": "U.S.A New Yourk",
-            "imageUrl": "https://d326fntlu7tb1e.cloudfront.net/uploads/f3f44363-f250-4002-88a8-19fe79169cc7-geyser-yelowstone-burst_h.webp",
-            "title": "Yellowstone National Park",
             "rating": 4.8,
             "review": "24455 Reviews"
         }
