@@ -13,7 +13,7 @@ const HomeScreen = ({ navigation }) => {
             <ReusableText
               text={'Hey User!'}
               family={"regular"}
-              size={SIZES.xxLarge}
+              size={SIZES.xLarge}
               color={COLORS.black}
             />
 
@@ -28,12 +28,12 @@ const HomeScreen = ({ navigation }) => {
 
           <HeightSpacer height={40}/>
 
-          <ReusableText
+          {/* <ReusableText
               text={'Events'}
               family={"medium"}
               size={SIZES.large}
               color={COLORS.black}
-          />
+          /> */}
 
           <Places/>
           

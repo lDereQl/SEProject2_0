@@ -7,6 +7,7 @@ import Search from './search/Search'
 import Settings from './settings/Settings'
 import EventDetails from './details/EventDetails'
 import Recommended from './details/Recommended'
+import PlaceDetails from './details/PlaceDetails'
 
 export {
     HomeScreen,
@@ -17,5 +18,6 @@ export {
     Search,
     Settings,
     EventDetails,
-    Recommended
+    Recommended,
+    PlaceDetails
 }
