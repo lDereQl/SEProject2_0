@@ -7,6 +7,7 @@ import NetworkImage from "./Reusable/NetworkImage";
 import Recomendations from "./Home/Recomendations";
 import ReusableTile from "./Reusable/ReusableTile";
 import Rating from "./Reusable/Rating";
+import BestHotels from "./Home/BestHotels";
 
 export {
     ReusableText,
@@ -17,5 +18,6 @@ export {
     Country,
     NetworkImage,
     Recomendations,
-    Rating
+    Rating,
+    BestHotels
 }
