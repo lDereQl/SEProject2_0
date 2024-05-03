@@ -1,14 +1,18 @@
-import { View, Text, StyleSheet } from 'react-native'
+import { View, Text, StyleSheet, TouchableOpacity } from 'react-native'
 import React from 'react'
+import reusable from './reusable.style'
 import { COLORS, SIZES, TEXT } from '../../constants/theme'
-import NetworkImage from './NetworkImage'
-import WidthSpacer from './WidthSpacer'
-import ReusableText from './ReusableText'
-import HeightSpacer from './HeightSpacer'
+import { 
+  NetworkImage, 
+  WidthSpacer, 
+  ReusableText, 
+  HeightSpacer, 
+  Rating,
+} from '../../components/index'
 
-const ReusableTile = ({item}) => {
+const ReusableTile = ({item, onPress}) => {
   return (
-    <TouchableOPacity style = {style.container}>
+    <TouchableOpacity style = {style.container} onPress={onPress}>
         <View style={reusable.rowWithSpace('flex-start')}>
             <NetworkImage 
                 source={item.imageUrl}
@@ -20,25 +24,37 @@ const ReusableTile = ({item}) => {
             <WidthSpacer width={15}/>
 
             <View>
-            <ReusableText
-              text={item.title}
-              family={"medium"}
-              size={SIZES.medium}
-              color={COLORS.black}
-            />
+              <ReusableText
+                text={item.title}
+                family={"medium"}
+                size={SIZES.medium}
+                color={COLORS.black}
+              />
 
-            <HeightSpacer height={8}/>
+              <HeightSpacer height={8}/>
 
-            <ReusableText
-              text={item.title}
-              family={"medium"}
-              size={SIZES.medium}
-              color={COLORS.black}
-            />
+              <ReusableText
+                text={item.location}
+                family={"medium"}
+                size={14}
+                color={COLORS.gray}
+              />
 
+              <HeightSpacer height={8}/>
+            
+              <View style={reusable.rowWithSpace('flex-start')}>
+                <Rating rating={item.rating}/>
+                <WidthSpacer width={5}/>
+                <ReusableText
+                  text={`(${item.review})`}
+                  family={"medium"}
+                  size={14}
+                  color={COLORS.gray}
+                />
+              </View>
             </View>
         </View>
-    </TouchableOPacity>
+    </TouchableOpacity>
   )
 }
 

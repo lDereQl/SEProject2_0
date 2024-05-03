@@ -1,6 +1,12 @@
 import { View, SafeAreaView, TouchableOpacity } from 'react-native';
 import reusable  from '../../components/Reusable/reusable.style'
-import {ReusableText, HeightSpacer, Places} from '../../components'
+import {
+  ReusableText, 
+  HeightSpacer, 
+  Places, 
+  Recomendations, 
+  BestHotels
+} from '../../components'
 import { SIZES, COLORS } from '../../constants/theme'
 import { AntDesign } from "@expo/vector-icons"
 import home from './home.style';
@@ -13,7 +19,7 @@ const HomeScreen = ({ navigation }) => {
             <ReusableText
               text={'Hey User!'}
               family={"regular"}
-              size={SIZES.xxLarge}
+              size={SIZES.xLarge}
               color={COLORS.black}
             />
 
@@ -28,17 +34,23 @@ const HomeScreen = ({ navigation }) => {
 
           <HeightSpacer height={40}/>
 
-          <ReusableText
+          {/* <ReusableText
               text={'Events'}
               family={"medium"}
               size={SIZES.large}
               color={COLORS.black}
-          />
+          /> */}
 
           <Places/>
           
           <HeightSpacer height={15}/>
 
+          <Recomendations/>
+
+          <HeightSpacer height={30}/>
+
+          <BestHotels/>
+          
         </View>
       </SafeAreaView>
     );
