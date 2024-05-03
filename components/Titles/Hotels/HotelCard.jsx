@@ -1,10 +1,11 @@
 import { StyleSheet, TouchableOpacity, View } from 'react-native'
 import React from 'react'
-import NetworkImage, { HeightSpacer } from '../../index'
+import {COLORS, SIZES} from '../../../constants/theme'
+import { NetworkImage, HeightSpacer, ReusableText, Rating } from '../../index'
 
-const HotelCard = ({item, margin}) => {
+const HotelCard = ({item, margin, onPress}) => {
   return (
-    <TouchableOpacity style={styles.card(margin)}>
+    <TouchableOpacity style={styles.card(margin)} onPress={onPress}>
         <View>
             <View style={styles.imageContainer}>
                 <NetworkImage
@@ -18,6 +19,26 @@ const HotelCard = ({item, margin}) => {
             <HeightSpacer height={5}/>
 
             <View style={{padding: 10}}>
+                <ReusableText
+                    text={item.title}
+                    family={"medium"}
+                    size={SIZES.medium}
+                    color={COLORS.black}
+                />
+
+                <HeightSpacer height={5}/>
+
+                <ReusableText
+                    text={item.location}
+                    family={"medium"}
+                    size={SIZES.medium}
+                    color={COLORS.gray}
+                />
+
+                <HeightSpacer height={5}/>
+
+                <Rating rating={item.rating}/>
+
 
             </View>
         </View>

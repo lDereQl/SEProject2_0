@@ -5,6 +5,8 @@ import reusable from '../Reusable/reusable.style'
 import ReusableText from '../Reusable/ReusableText'
 import { Feather } from '@expo/vector-icons'
 import { useNavigation } from '@react-navigation/native'
+import HotelCard from '../Titles/Hotels/HotelCard'
+import Rating from '../Reusable/Rating'
 
 const BestHotels = () => {
     const navigation = useNavigation();
@@ -81,7 +83,7 @@ const BestHotels = () => {
             showsHorizontalScrollIndicator={false}
             contentContainerStyle={{columnGap: SIZES.medium}}
             renderItem={({item})=>(
-                <Text>{item.title}</Text>
+                <HotelCard item={item} margin={10} onPress={()=>{}}/>
             )}
         />
     </View>
