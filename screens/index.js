@@ -8,6 +8,8 @@ import Settings from './settings/Settings'
 import EventDetails from './details/EventDetails'
 import Recommended from './details/Recommended'
 import PlaceDetails from './details/PlaceDetails'
+import HotelDetails from './details/HotelDetails'
+import HotelList from './details/HotelList'
 
 export {
     HomeScreen,
@@ -19,5 +21,7 @@ export {
     Settings,
     EventDetails,
     Recommended,
-    PlaceDetails
+    PlaceDetails,
+    HotelDetails,
+    HotelList
 }

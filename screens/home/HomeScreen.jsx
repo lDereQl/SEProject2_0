@@ -4,7 +4,7 @@ import {
   ReusableText, 
   HeightSpacer, 
   Places, 
-  Recomendations, 
+  Recomendations,
   BestHotels
 } from '../../components'
 import { SIZES, COLORS } from '../../constants/theme'
