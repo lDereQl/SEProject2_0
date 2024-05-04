@@ -1,11 +1,14 @@
-import { View, Text } from 'react-native'
+import { View, SafeAreaView } from 'react-native'
 import React from 'react'
+import AppBar from '../../components/Reusable/AppBar'
 
 const Recommended = () => {
   return (
-    <View>
-      <Text>Recommended</Text>
-    </View>
+    <SafeAreaView style={{marginHorizontal: 20}}>
+      <View style={{height: 0}}>
+        <AppBar title={'Recommendatiion'}/>
+      </View>
+    </SafeAreaView>
   )
 }
 
