@@ -53,7 +53,7 @@ const Recommended = ({navigation}) => {
           icon={'search1'} 
           color1={COLORS.white}
           onPress={() => navigation.goBack()}
-          onPress1={() => navigation.navigate("Search")}
+          onPress1={() => navigation.navigate("HotelSearch")}
         />
       </View>
 
