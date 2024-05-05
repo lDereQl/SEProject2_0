@@ -5,11 +5,11 @@ import { AntDesign } from '@expo/vector-icons'
 import { COLORS, TEXT } from '../../constants/theme'
 import ReusableText from './ReusableText'
 
-const AppBar = ({color, color1, title}) => {
+const AppBar = ({color, color1, title, icon, onPress, onPress1}) => {
   return (
     <View style={styles.overlay}>
       <View style={reusable.rowWithSpace('space-between')}>
-        <TouchableOpacity style={styles.box(color)}>
+        <TouchableOpacity style={styles.box(color)} onPress={onPress}>
             <AntDesign
                 name='left'
                 size={26}
@@ -23,9 +23,9 @@ const AppBar = ({color, color1, title}) => {
             color={COLORS.black}
         />
 
-        <TouchableOpacity style={styles.box(color1)}>
+        <TouchableOpacity style={styles.box(color1)} onPress={onPress1}>
             <AntDesign
-                name='search1'
+                name={icon}
                 size={26}
             />
         </TouchableOpacity>
