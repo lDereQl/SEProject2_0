@@ -1,4 +1,4 @@
-import { FlatList, StyleSheet, TouchableOpacity, View, Text } from 'react-native'
+import { FlatList, TouchableOpacity, View } from 'react-native'
 import React from 'react'
 import { TEXT, COLORS, SIZES } from '../../constants/theme'
 import reusable from '../Reusable/reusable.style'
@@ -6,7 +6,6 @@ import ReusableText from '../Reusable/ReusableText'
 import { Feather } from '@expo/vector-icons'
 import { useNavigation } from '@react-navigation/native'
 import HotelCard from '../Titles/Hotels/HotelCard'
-import Rating from '../Reusable/Rating'
 
 const BestHotels = () => {
     const navigation = useNavigation();
@@ -67,7 +66,7 @@ const BestHotels = () => {
               color={COLORS.black}
           />
 
-        <TouchableOpacity onPress={() => navigation.navigate('Recommended')}>
+        <TouchableOpacity onPress={() => navigation.navigate('HotelList')}>
             <Feather 
                 name="list"
                 size={20}
@@ -83,7 +82,7 @@ const BestHotels = () => {
             showsHorizontalScrollIndicator={false}
             contentContainerStyle={{columnGap: SIZES.medium}}
             renderItem={({item})=>(
-                <HotelCard item={item} margin={10} onPress={()=>{}}/>
+                <HotelCard item={item} margin={10} onPress={() => navigation.navigate('HotelDetails')}/>
             )}
         />
     </View>
@@ -91,5 +90,3 @@ const BestHotels = () => {
 }
 
 export default BestHotels
-
-const styles = StyleSheet.create({})

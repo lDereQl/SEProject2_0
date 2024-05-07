@@ -3,8 +3,16 @@
 import * as React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { LoginScreen, RegistrScreen, Settings, 
-         EventDetails, Recommended, PlaceDetails} from './screens';
+import { LoginScreen, 
+         RegistrScreen, 
+         Settings, 
+         EventDetails, 
+         Recommended, 
+         PlaceDetails, 
+         HotelDetails,
+         HotelList,
+         HotelSearch
+} from './screens';
 import BottomTabNavigation from './navigation/BottomTabNavigation';
 import { useFonts } from 'expo-font';
 import { useCallback } from 'react';
@@ -34,7 +42,7 @@ function App() {
 
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Bottom" screenOptions = {{headerShown: false}}>
+      <Stack.Navigator initialRouteName="Login" screenOptions = {{headerShown: false}}>
         <Stack.Screen name = "Bottom" component = {BottomTabNavigation} />
         <Stack.Screen name = "Login" component = {LoginScreen} />
         <Stack.Screen name = "Register" component = {RegistrScreen}/>
@@ -42,6 +50,9 @@ function App() {
         <Stack.Screen name = "EventDetails" component = {EventDetails}/>
         <Stack.Screen name = "Recommended" component = {Recommended}/>
         <Stack.Screen name = "PlaceDetails" component = {PlaceDetails}/>
+        <Stack.Screen name = "HotelDetails" component = {HotelDetails}/>
+        <Stack.Screen name = "HotelList" component = {HotelList}/>
+        <Stack.Screen name = "HotelSearch" component = {HotelSearch}/>
       </Stack.Navigator>
     </NavigationContainer>
   );
