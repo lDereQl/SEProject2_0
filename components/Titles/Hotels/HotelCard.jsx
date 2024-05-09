@@ -54,7 +54,7 @@ const styles = StyleSheet.create({
         height: 250,
         borderRadius: 16,
         backgroundColor: COLORS.lightWhite,
-        margin: margin
+        marginRight: margin
     }),
     imageContainer:{
         allignItems: "center",
