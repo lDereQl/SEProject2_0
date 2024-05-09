@@ -7,7 +7,7 @@ module.exports = {
 
             res.status(200).json({status: true, message: "User successfully deleted"})
         } catch (error) {
-            return next(error)
+            return next(error);
         }
     },
 
