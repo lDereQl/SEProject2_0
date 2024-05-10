@@ -4,6 +4,8 @@ import AppBar from '../../components/Reusable/AppBar'
 import { COLORS } from '../../constants/theme'
 import { ReusableTile } from '../../components'
 
+import New_York from '../../assets/images/new_york.jpg';
+
 const Recommended = ({navigation}) => {
   const recommendations =  [
     {
@@ -11,7 +13,7 @@ const Recommended = ({navigation}) => {
         "country_id": "64c62bfc65af9f8c969a8d04",
         "title": "Walt Disney World",
         "location": "U.S.A New Yourk",
-        "imageUrl": "../../assets/images/disnay.jpg",
+        "imageUrl": New_York,
         "rating": 4.7,
         "review": "1204 Reviews"
     },
@@ -47,7 +49,10 @@ const Recommended = ({navigation}) => {
   return (
     <SafeAreaView style={{marginHorizontal: 20}}>
       <View style={{height: 50}}>
-        <AppBar 
+        <AppBar
+          top={10}
+          left={0}
+          right={0}
           title={'Recommendations'} 
           color={COLORS.white} 
           icon={'search1'} 
