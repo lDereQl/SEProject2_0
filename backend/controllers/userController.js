@@ -7,16 +7,16 @@ module.exports = {
 
             res.status(200).json({status: true, message: "User successfully deleted"})
         } catch (error) {
-            return next(error)
+            return next(error);
         }
     },
 
 
     getUser: async (req,res,next) => {
         const user_id =req.user.id;
-        
+        console.log(user_id);
         try {
-            const user = User.findById({user_id}, {password: 0, __v: 0, createdAt: 0, updatedAt: 0})
+            const user = User.findById({_id: user_id}, {password: 0, __v: 0, createdAt: 0, updatedAt: 0})
 
             if(!user){
                 return res.status(401).json({status: false, message: "User does not exist"});

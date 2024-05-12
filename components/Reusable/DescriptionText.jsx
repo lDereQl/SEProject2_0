@@ -1,20 +1,21 @@
-import { StyleSheet, Text, View } from 'react-native';
-import React from 'react';
-import { TEXT } from '../../constants/theme'
+import {StyleSheet, Text, View } from 'react-native'
+import React from 'react'
 
-const DescriptionText = ({lines, text}) => {
-    return (
-        <Text number0fLines={lines} style={styles.description}>{text}</Text>
-    );
-};
+const DescriptionText = () => {
+return (
+ <View>
+ <Text>DescriptionText</Text>
+ </View>
+ )
+}
 
 export default DescriptionText
 
 const styles = StyleSheet.create({
-    description: {
-        paddingVertical: 10,
-        fontFamily: "regular",
-        textAlign: "justify",
-        fontSize: TEXT.medium
-    },
-});
+ description: {
+   paddingVertical: 10,
+   fontFamily: "regular",
+   textAlign: "justify",
+   fontSize: Text.medium
+   }
+})
