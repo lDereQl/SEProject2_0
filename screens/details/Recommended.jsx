@@ -47,7 +47,10 @@ const Recommended = ({navigation}) => {
   return (
     <SafeAreaView style={{marginHorizontal: 20}}>
       <View style={{height: 50}}>
-        <AppBar 
+        <AppBar
+          top={10}
+          left={0}
+          right={0}
           title={'Recommendations'} 
           color={COLORS.white} 
           icon={'search1'} 
