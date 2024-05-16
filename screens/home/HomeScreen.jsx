@@ -34,13 +34,6 @@ const HomeScreen = ({ navigation }) => {
 
           <HeightSpacer height={40}/>
 
-          {/* <ReusableText
-              text={'Events'}
-              family={"medium"}
-              size={SIZES.large}
-              color={COLORS.black}
-          /> */}
-
           <Places/>
           
           <HeightSpacer height={15}/>

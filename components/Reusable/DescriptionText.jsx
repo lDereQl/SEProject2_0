@@ -4,7 +4,9 @@ import { TEXT } from '../../constants/theme'
 
 const DescriptionText = ({lines, text}) => {
     return (
-        <Text number0fLines={lines} style={styles.description}>{text}</Text>
+        <Text number0fLines={lines} style={styles.description}>
+            {text}
+        </Text>
     );
 };
 
