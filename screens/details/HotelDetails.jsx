@@ -7,7 +7,8 @@ import {
   ReusableText, 
   HeightSpacer, 
   DescriptionText, 
-  HotelMap 
+  HotelMap, 
+  ReviewsList
 } from '../../components' 
 import styles from "./hotelDetails.style"
 import reusable from '../../components/Reusable/reusable.style'
@@ -183,6 +184,8 @@ const HotelDetails = ({navigation}) => {
           </TouchableOpacity>
         </View>
         
+        <ReviewsList reviews={hotel.reviews}/>
+
         </View>
       </View>
     </ScrollView>
