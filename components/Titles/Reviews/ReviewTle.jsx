@@ -23,7 +23,7 @@ const ReviewTle = ({review}) => {
 
           <WidthSpacer width={20}/>
 
-          <View style={{width: "80%"}}>
+          <View style={{width: "78%"}}>
             <View style={reusable.rowWithSpace('space-between')}>
               <ReusableText
                 text={review.user.username}
@@ -47,7 +47,7 @@ const ReviewTle = ({review}) => {
 
             </View>
 
-            <DescriptionText text={review.review} lines={4}/>
+            <DescriptionText text={review.review} lines={1}/>
           </View>
         </View>
       </View>

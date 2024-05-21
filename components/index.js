@@ -1,4 +1,5 @@
 import ReusableText from "./Reusable/ReusableText";
+import Button from "./Buttons/button";
 import HeightSpacer from "./Reusable/HeightSpacer";
 import WidthSpacer from "./Reusable/WidthSpacer";
 import Places from "./Home/Places";
@@ -18,6 +19,7 @@ import ReviewTle from "./Titles/Reviews/ReviewTle"
 
 export {
     ReusableText,
+    Button,
     ReusableTile,
     HeightSpacer,
     WidthSpacer,

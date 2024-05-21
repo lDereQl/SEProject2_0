@@ -2,6 +2,7 @@ import React from 'react';
 import { SafeAreaView, ScrollView, StyleSheet, Text, Image } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { ALERT_TYPE, Dialog, AlertNotificationRoot } from 'react-native-alert-notification';
+import { SIZES, COLORS } from '../../constants/theme'
 
 import Button from '../../components/Buttons/button';
 import Input from '../../components/Inputs/input';
@@ -141,7 +142,15 @@ const RegistrScreen = ({ navigation }) => {
                 error = {errors.pconfirm}
             />
 
-            <Button title = "Register" onPress = {validate}/>
+            <Button
+              onPress = {validate}
+              title={"Register"} 
+              width={(SIZES.width - 40)} 
+              backgroundColor={COLORS.blue} 
+              borderColor={COLORS.blue} 
+              borderWidth={0}
+              textColor={COLORS.white}
+            />
             </ScrollView>
         </AlertNotificationRoot>
       </SafeAreaView>

@@ -110,13 +110,17 @@ const EventDetails = ({navigation}) => {
 
             <PopularList data={country.popular}/>
 
-              <Button
-                onPress={() => navigation.navigate("HotelSearch")}
-                title ={"Find Best Hotels"}
-                textColor = {COLORS.white}
-              />
+            <Button
+              onPress={() => navigation.navigate("HotelSearch")}
+              title={"Find Best Hotels"} 
+              width={(SIZES.width - 40)} 
+              backgroundColor={COLORS.blue} 
+              borderColor={COLORS.blue} 
+              borderWidth={0}
+              textColor={COLORS.white}
+            />
 
-              <HeightSpacer height={50}/>
+            <HeightSpacer height={50}/>
             
           </View>
         </View>
