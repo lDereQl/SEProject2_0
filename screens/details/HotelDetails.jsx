@@ -211,9 +211,9 @@ const HotelDetails = ({navigation}) => {
           </View>
 
           <Button
-            onPress={() => navigation. navigate ("HotelSearch")}
+            onPress={() => navigation.navigate ("SelectRoom")}
             title={"Select Room"} 
-            width={(SIZES.width - 50) /2.2} 
+            width={(SIZES.width - 50)/2.2} 
             backgroundColor={COLORS.blue} 
             borderColor={COLORS.blue} 
             borderWidth={0}

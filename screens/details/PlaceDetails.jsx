@@ -52,8 +52,7 @@ const PlaceDetails = ({ navigation }) => {
   }
   
   return (
-    <SafeAreaView>
-      <ScrollView>
+    <ScrollView>
         <View>
           <NetworkImage
             source={Place.imageUrl}
@@ -61,10 +60,13 @@ const PlaceDetails = ({ navigation }) => {
             height={350}
             radius= {30}
           />
+
+          <HeightSpacer height={20}/>
+
           <AppBar
-            top={10}
-            left={0}
-            right={0}
+            top={50}
+            left={10}
+            right={10}
             color = {COLORS.white}
             icon = {"search1"}
             color1 = {COLORS.white}
@@ -123,7 +125,6 @@ const PlaceDetails = ({ navigation }) => {
         </View>
       
       </ScrollView>
-    </SafeAreaView>
   )
 }
 

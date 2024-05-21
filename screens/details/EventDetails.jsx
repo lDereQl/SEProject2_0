@@ -54,8 +54,7 @@ const EventDetails = ({navigation}) => {
     }
 
   return (
-    <SafeAreaView>
-      <ScrollView>
+    <ScrollView>
         <View>
           <NetworkImage
             source={country.imageUrl}
@@ -64,10 +63,9 @@ const EventDetails = ({navigation}) => {
             radius= {30}
           />
           <AppBar
-            top={10}
-            left={0}
-            right={0}
-            title = {country.country}
+            top={50}
+            left={10}
+            right={10}
             color = {COLORS.white}
             icon = {"search1"}
             color1 = {COLORS.white}
@@ -125,8 +123,7 @@ const EventDetails = ({navigation}) => {
           </View>
         </View>
       
-      </ScrollView>
-    </SafeAreaView>
+      </ScrollView>      
   )
 }
 
