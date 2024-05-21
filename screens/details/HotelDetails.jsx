@@ -45,24 +45,25 @@ const HotelDetails = ({navigation}) => {
     "reviews":[
       {
         " _id": "64d38ff59af9119acfab@ece",
-        "reviews": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, Inmolestiae quas vel sint commod",
+        "review": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, Inmolestiae quas vel sint commod",
         "rating": 4.6,
         "user": {
           " _id": "64c5d95adc7efae2a45ec376",
           "username": "John Doe",
-          "profile": "https://d326fntlu7tble.cloudfront.net/uploads/4c004766-cOad-42ed-bef1-6a7616b24c11-vinci_11.jpg",
-          "updatedAt": "2023-08-09T13:09:09.200Z"
+          "profile": "https://wallpapers.com/images/featured/cool-profile-picture-87h46gcobjl5e4xu.jpg",
         },
-
+        "updatedAt": "2023-08-09"
+      },
+      {
         " _id": "64d38ff59af9119acfab@ece",
-        "reviews": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, Inmolestiae quas vel sint commod",
+        "review": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, Inmolestiae quas vel sint commod",
         "rating": 4.6,
         "user": {
           " _id": "64c5d95adc7efae2a45ec376",
-          "username": "John Doe",
-          "profile": "https://d326fntlu7tble.cloudfront.net/uploads/4c004766-cOad-42ed-bef1-6a7616b24c11-vinci_11.jpg",
-          "updatedAt": "2023-08-09T13:09:09.200Z"
-        }
+          "username": "Zoe Doe",
+          "profile": "https://lh3.googleusercontent.com/proxy/mhr931UuskNARHtPRIL93Kuz4BXkb8zoO97skLqeuYUTwbvxXbyXUMGjekSisMxp57jCHzKXFQbaXZkVkz4Fkem_XBPQIQyfmZX1SojBf2KZ7TEys7yxPWefdNeR4L5I_ZSw1swvif8unLE3Pt9pimf1W5R8eVI0tt6k"
+        },
+        "updatedAt": "2023-08-09"
       }
     ]
   };
@@ -137,7 +138,7 @@ const HotelDetails = ({navigation}) => {
         </View>
       </View> 
 
-      <View style={[styles.container, { paddingTop: 90 }]}>
+      <View style={[styles.container, {paddingTop: 90}]}>
         <ReusableText
           text={"Description"}
           family={"medium"}
@@ -184,6 +185,8 @@ const HotelDetails = ({navigation}) => {
           </TouchableOpacity>
         </View>
         
+        <HeightSpacer height={10}/>
+
         <ReviewsList reviews={hotel.reviews}/>
 
         </View>

@@ -10,7 +10,9 @@ const ReviewsList = ({reviews}) => {
         showsVerticalScrollImdicator={false}
         keyExtractor={(item)=>item._id}
         renderItem={({item})=>(
-            <ReviewTle reviews={item}/>
+            <View style={{marginBottom: 10}}>
+              <ReviewTle review={item}/>
+            </View>
         )}
     />
   )

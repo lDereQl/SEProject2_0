@@ -7,7 +7,7 @@ const HotelMap = ({coordinates}) => {
     <TouchableOpacity onPress={()=>{}}>
         <MapView style={styles.maps} region={coordinates}>
             <Marker
-                coordinates={coordinates}
+                coordinate={coordinates}
                 title={coordinates.title}
             />
         </MapView>
