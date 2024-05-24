@@ -9,7 +9,7 @@ const HotelCard = ({item, margin, onPress}) => {
         <View>
             <View style={styles.imageContainer}>
                 <NetworkImage
-                    source={item.imageURL}
+                    source={item.imageUrl}
                     width={'90%'}
                     height={'100%'}
                     radius={16}
@@ -57,7 +57,7 @@ const styles = StyleSheet.create({
         marginRight: margin
     }),
     imageContainer:{
-        allignItems: "center",
+        alignItems: "center",
         marginTop: 10,
         height: 150
     }

@@ -1,4 +1,5 @@
 import ReusableText from "./Reusable/ReusableText";
+import Button from "./Buttons/button";
 import HeightSpacer from "./Reusable/HeightSpacer";
 import WidthSpacer from "./Reusable/WidthSpacer";
 import Places from "./Home/Places";
@@ -12,9 +13,13 @@ import HotelCard from "./Titles/Hotels/HotelCard";
 import AppBar from "./Reusable/AppBar";
 import DescriptionText from "./Reusable/DescriptionText";
 import PopularList from "./Country/PopularList";
+import HotelMap from "./Hotel/HotelMap";
+import ReviewsList from "./Hotel/ReviewsList";
+import ReviewTle from "./Titles/Reviews/ReviewTle"
 
 export {
     ReusableText,
+    Button,
     ReusableTile,
     HeightSpacer,
     WidthSpacer,
@@ -27,5 +32,8 @@ export {
     HotelCard,
     AppBar,
     DescriptionText,
-    PopularList
+    PopularList,
+    HotelMap,
+    ReviewsList,
+    ReviewTle
 }

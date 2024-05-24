@@ -15,7 +15,7 @@ const Recomendations = () => {
             "country_id": "64c62bfc65af9f8c969a8d04",
             "title": "Walt Disney World",
             "location": "U.S.A New Yourk",
-            "imageUrl": "../../assets/images/disnay.jpg",
+            "imageUrl": "https://d326fntlu7tb1e.cloudfront.net/uploads/731e1f89-c028-43ef-97ee-8beabde696b6-vinci_01_disney.jpg",
             "rating": 4.7,
             "review": "1204 Reviews"
         },

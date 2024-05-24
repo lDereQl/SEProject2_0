@@ -2,6 +2,7 @@ import React from "react";
 import { StyleSheet, SafeAreaView, View, Text, ScrollView, Image } from 'react-native';
 import { ALERT_TYPE, Dialog, AlertNotificationRoot, Toast } from 'react-native-alert-notification';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import { SIZES, COLORS } from '../../constants/theme'
 
 import Button from '../../components/Buttons/button';
 import Input from '../../components/Inputs/input';
@@ -127,7 +128,15 @@ const LoginScreen = ({navigation}) => {
                 error = {errors.password}
             />
             </View>
-            <Button title = "Login" onPress = {validate}/>
+            <Button
+              onPress = {validate}
+              title={"Login"} 
+              width={(SIZES.width - 40)} 
+              backgroundColor={COLORS.blue} 
+              borderColor={COLORS.blue} 
+              borderWidth={0}
+              textColor={COLORS.white}
+            />
             <Text style = {style.signin} onPress = {() => 
               navigation.navigate("Register")}>Sign in</Text>
           </ScrollView>

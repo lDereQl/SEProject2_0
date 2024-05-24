@@ -13,8 +13,8 @@ const Country = ({item}) => {
 
         <NetworkImage
           source={item.imageUrl}
-          width={60}
-          height={60}
+          width={85}
+          height={85}
           radius={12}
         />
 

@@ -54,8 +54,7 @@ const EventDetails = ({navigation}) => {
     }
 
   return (
-    <SafeAreaView>
-      <ScrollView>
+    <ScrollView>
         <View>
           <NetworkImage
             source={country.imageUrl}
@@ -64,10 +63,9 @@ const EventDetails = ({navigation}) => {
             radius= {30}
           />
           <AppBar
-            top={10}
-            left={0}
-            right={0}
-            title = {country.country}
+            top={50}
+            left={10}
+            right={10}
             color = {COLORS.white}
             icon = {"search1"}
             color1 = {COLORS.white}
@@ -110,19 +108,22 @@ const EventDetails = ({navigation}) => {
 
             <PopularList data={country.popular}/>
 
-              <Button
-                onPress={() => navigation.navigate("HotelSearch")}
-                title ={"Find Best Hotels"}
-                textColor = {COLORS.white}
-              />
+            <Button
+              onPress={() => navigation.navigate("HotelSearch")}
+              title={"Find Best Hotels"} 
+              width={(SIZES.width - 40)} 
+              backgroundColor={COLORS.blue} 
+              borderColor={COLORS.blue} 
+              borderWidth={0}
+              textColor={COLORS.white}
+            />
 
-              <HeightSpacer height={50}/>
+            <HeightSpacer height={50}/>
             
           </View>
         </View>
       
-      </ScrollView>
-    </SafeAreaView>
+      </ScrollView>      
   )
 }
 
