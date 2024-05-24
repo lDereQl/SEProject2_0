@@ -32,7 +32,7 @@ const HomeScreen = ({ navigation }) => {
             </TouchableOpacity>
           </View>
 
-          <HeightSpacer height={40}/>
+          <HeightSpacer height={20}/>
 
           <Places/>
           
@@ -40,7 +40,7 @@ const HomeScreen = ({ navigation }) => {
 
           <Recomendations/>
 
-          <HeightSpacer height={30}/>
+          <HeightSpacer height={20}/>
 
           <BestHotels/>
           
