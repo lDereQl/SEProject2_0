@@ -5865,6 +5865,11 @@ react-native-maps@^1.15.2:
   dependencies:
     "@types/geojson" "^7946.0.13"
 
+react-native-pager-view@^6.3.1:
+  version "6.3.1"
+  resolved "https://registry.npmjs.org/react-native-pager-view/-/react-native-pager-view-6.3.1.tgz"
+  integrity sha512-U7Ep6ukTA5pKMQskSxHpDI9RoESzBHDcBfVFwnK5SRCy9632Dq4a7Jp2m8vA9mK5k6Vi7yaqqKLFVoHnUdC8zA==
+
 react-native-paper@^5.12.3:
   version "5.12.3"
   resolved "https://registry.npmjs.org/react-native-paper/-/react-native-paper-5.12.3.tgz"
@@ -7381,6 +7386,11 @@ yargs@^17.6.2:
     string-width "^4.2.3"
     y18n "^5.0.5"
     yargs-parser "^21.1.1"
+
+yarn@^1.22.22:
+  version "1.22.22"
+  resolved "https://registry.npmjs.org/yarn/-/yarn-1.22.22.tgz"
+  integrity sha512-prL3kGtyG7o9Z9Sv8IPfBNrWTDmXB4Qbes8A9rEzt6wkJV8mUvoirjU0Mp3GGAU06Y0XQyA3/2/RQFVuK7MTfg==
 
 yocto-queue@^0.1.0:
   version "0.1.0"

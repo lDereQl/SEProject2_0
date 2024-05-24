@@ -12,6 +12,9 @@ import HotelDetails from './details/HotelDetails'
 import HotelList from './details/HotelList'
 import HotelSearch from './search/HotelSearch'
 import SelectRoom from './details/SelectRoom'
+import TopBooking from './top/TopBooking'
+import TopInfo from './top/TopInfo'
+import TopTrips from './top/TopTrips'
 
 export {
     HomeScreen,
@@ -27,5 +30,8 @@ export {
     HotelDetails,
     HotelList,
     HotelSearch,
-    SelectRoom
+    SelectRoom,
+    TopBooking,
+    TopInfo,
+    TopTrips
 }

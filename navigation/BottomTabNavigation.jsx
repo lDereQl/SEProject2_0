@@ -4,6 +4,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import { HomeScreen, Location, Search, Profile } from '../screens';
 import {Ionicons} from '@expo/vector-icons'
 import { COLORS } from '../constants/theme';
+import TopTap from './TopTap';
 
 const Tab = createBottomTabNavigator();
 
@@ -69,7 +70,7 @@ const BottomTabNavigation = () => {
         />
 
         <Tab.Screen
-        name='Profile' component = {Profile} options={{
+        name='Profile' component = {TopTap} options={{
             tabBarStyle: tabBarStyle,
             tabBarShowLabel: false,
             headerShown: false,
