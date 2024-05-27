@@ -1,6 +1,6 @@
 import HomeScreen from './home/HomeScreen'
-import LoginScreen from './authentication/LoginScreen'
-import RegistrScreen from './authentication/RegistrScreen'
+import Signin from './authentication/Signin'
+import Registration from './authentication/Registration'
 import Location from "./location/Location"
 import Profile from "./profile/Profile"
 import Search from './search/Search'
@@ -22,8 +22,8 @@ import Failed from './booking/Failed'
 
 export {
     HomeScreen,
-    LoginScreen,
-    RegistrScreen,
+    Signin,
+    Registration,
     Location,
     Chat,
     Profile,

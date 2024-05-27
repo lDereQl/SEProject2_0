@@ -46,8 +46,6 @@ function App() {
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Bottom" screenOptions = {{headerShown: false}}>
         <Stack.Screen name = "Bottom" component = {BottomTabNavigation} />
-        <Stack.Screen name = "Login" component = {LoginScreen} />
-        <Stack.Screen name = "Register" component = {RegistrScreen}/>
         <Stack.Screen name = "Settings" component = {Settings}/>
         <Stack.Screen name = "EventDetails" component = {EventDetails}/>
         <Stack.Screen name = "Recommended" component = {Recommended}/>

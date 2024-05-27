@@ -1,14 +1,31 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
+import { View, Text, ScrollView, TouchableOpacity } from "react-native";
+import React from "react";
+import { createMaterialTopTabNavigator } from "@react-navigation/material-top-tabs";
+import { Registration, Signin } from "../screens";
+import { COLORS } from "../constants/theme";
+import { AssetImage, HeightSpacer, AppBar } from "../components";
 
-const AuthTopTab = () => {
+const Tab = createMaterialTopTabNavigator();
+
+const AuthTopTab = ({navigation}) => {
   return (
-    <View>
-      <Text>AuthTopTab</Text>
+    <View style={{ flex: 1, backgroundColor: COLORS.lightWhite }}>
+        <HeightSpacer height={100}/>
+
+        <View style={{height: 600}}>
+            <Tab.Navigator
+                screenOptions={{
+                    tabBarLabelStyle: { fontSize: 16, fontFamily: "medium" },
+                    tabBarIndicatorStyle: {backgroundColor: COLORS.blue},
+                    tabBarActiveTintColor: COLORS.black, 
+                    tabBarInactiveTintColor: COLORS.gray,
+                }}>
+                <Tab.Screen name="Signin" component={Signin} />
+                <Tab.Screen name="Registration" component={Registration} />
+            </Tab.Navigator>
+        </View>
     </View>
   )
 }
 
 export default AuthTopTab
-
-const styles = StyleSheet.create({})
