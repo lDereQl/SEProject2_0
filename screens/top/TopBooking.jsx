@@ -1,7 +1,8 @@
 import { FlatList, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
-import { ReusableTile } from '../../components';
-import { COLORS } from '../../constants/theme';
+import { Button, ReusableTile } from '../../components';
+import { COLORS, SIZES } from '../../constants/theme';
+import reusable from '../../components/Reusable/reusable.style';
 
 const TopBooking = () => {
     const hotels =  [
@@ -45,6 +46,28 @@ const TopBooking = () => {
                 <ReusableTile
                     item={item}
                 />
+                <View style={[reusable.rowWithSpace('space-between'), {margin: 10}]}>
+                
+                <Button
+                  onPress={() => navigation.navigate("SelectedRoom", {item})}
+                  title={"Details"}
+                  width={(SIZES.width - 50)/2.2}
+                  backgroundColor={COLORS.white}
+                  borderColor={COLORS.blue}
+                  borderWidth={0.5}
+                  textColor={COLORS.blue}
+                />
+                
+                <Button
+                  onPress={() => navigation.navigate("SelectedRoom", {item})}
+                  title={"Cancel"}
+                  width={(SIZES.width - 50)/2.2}
+                  backgroundColor={COLORS.red}
+                  borderColor={COLORS.red}
+                  borderWidth={0}
+                  textColor={COLORS.white}
+                />
+              </View>
             </View>
         )}
       />

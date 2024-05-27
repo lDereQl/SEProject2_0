@@ -1,7 +1,7 @@
 import { View, Text } from 'react-native'
 import React from 'react'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
-import { HomeScreen, Location, Search, Profile } from '../screens';
+import { HomeScreen, Location, Chat, Successful, Failed } from '../screens';
 import {Ionicons} from '@expo/vector-icons'
 import { COLORS } from '../constants/theme';
 import TopTap from './TopTap';
@@ -55,13 +55,13 @@ const BottomTabNavigation = () => {
         }}/>
 
         <Tab.Screen
-        name='Search' component = {Search} options={{
+        name='Chat' component = {Successful} options={{
             tabBarStyle: tabBarStyle,
             tabBarShowLabel: false,
             headerShown: false,
             tabBarIcon: ({focused}) => (
                 <Ionicons
-                    name={"search"}
+                    name={"chatbubble-ellipses"}
                     color={focused ? COLORS.red : COLORS.gray}
                     size = {26}
                 />
