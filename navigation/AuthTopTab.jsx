@@ -28,7 +28,7 @@ const AuthTopTab = ({navigation}) => {
                         tabBarActiveTintColor: COLORS.black, 
                         tabBarInactiveTintColor: COLORS.gray,
                     }}>
-                    <Tab.Screen name="Signin" component={Signin} />
+                    <Tab.Screen name="Sign In" component={Signin} />
                     <Tab.Screen name="Registration" component={Registration} />
                 </Tab.Navigator>
             </View>
