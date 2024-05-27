@@ -4,7 +4,7 @@ import RegistrScreen from './authentication/RegistrScreen'
 import Location from "./location/Location"
 import Profile from "./profile/Profile"
 import Search from './search/Search'
-import Settings from './settings/Settings'
+import Chat from './chat/Chat'
 import EventDetails from './details/EventDetails'
 import Recommended from './details/Recommended'
 import PlaceDetails from './details/PlaceDetails'
@@ -16,15 +16,18 @@ import TopBooking from './top/TopBooking'
 import TopInfo from './top/TopInfo'
 import TopTrips from './top/TopTrips'
 import Payment from './profile/Payment'
+import Settings from './settings/Settings'
+import Successful from './booking/Successful'
+import Failed from './booking/Failed'
 
 export {
     HomeScreen,
     LoginScreen,
     RegistrScreen,
     Location,
+    Chat,
     Profile,
     Search,
-    Settings,
     EventDetails,
     Recommended,
     PlaceDetails,
@@ -35,5 +38,8 @@ export {
     TopBooking,
     TopInfo,
     TopTrips,
-    Payment
+    Payment,
+    Settings,
+    Successful,
+    Failed
 }
