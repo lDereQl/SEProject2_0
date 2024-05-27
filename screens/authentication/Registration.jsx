@@ -56,7 +56,7 @@ const Registration = ({ navigation }) => {
 
     const register = () => {
         console.log("register!");
-        console.log(input) ;
+        console.log(input);
         
         setLoader(true);
         setTimeout(() => {
