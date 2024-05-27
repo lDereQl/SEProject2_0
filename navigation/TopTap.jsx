@@ -1,7 +1,7 @@
 import { View, Image, Text } from 'react-native'
 import React from 'react'
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs'
-import { TopBooking, TopInfo, TopTrips } from '../screens';
+import { TopBooking, TopTrips, TopInfo } from '../screens';
 import { COLORS, SIZES } from '../constants/theme';
 import { HeightSpacer, NetworkImage, AppBar, ReusableText } from '../components';
 import styles from './topTab.style';
@@ -12,10 +12,9 @@ const TopTap = () => {
   return (
     <View style={{flex: 1}}>
         <View style={{backgroundColor: COLORS.lightWhite}}>
-            <View>
-                <HeightSpacer height={50}/>
+            <View>                
                 <NetworkImage
-                    source={'https://d326fntlu7tble.cloudfront.net/uploads/c87b6dfb-ee4b-47fa-9c02-6ccca2893a6f-vinci_06.jpg'}
+                    source={'https://png.pngtree.com/thumb_back/fh260/background/20230408/pngtree-rainbow-curves-abstract-colorful-background-image_2164067.jpg'}
                     width={'100%'}
                     height={300}
                     radius={0}
@@ -32,7 +31,7 @@ const TopTap = () => {
                 />
 
                 <View style={styles.profile}>
-                    <Image source={{uri: "https://png.pngtree.com/thumb_back/fh260/background/20230408/pngtree-rainbow-curves-abstract-colorful-background-image_2164067.jpg"}}
+                    <Image source={{uri: "https://wallpaperset.com/w/full/d/0/e/541563.jpg"}}
                         style={styles.image}
                     />
                     
@@ -56,7 +55,7 @@ const TopTap = () => {
                         text={"blablabla@gmail.com"}
                         family={"medium"}
                         size = {SIZES.medium}
-                        color={COLORS.black}
+                        color={COLORS.white}
                     /> 
                     </View>
                 </View>
@@ -64,8 +63,8 @@ const TopTap = () => {
         </View>
       <Tab.Navigator>
         <Tab.Screen name='Booking' component={TopBooking}/>
-        <Tab.Screen name='Info' component={TopInfo}/>
         <Tab.Screen name='Trips' component={TopTrips}/>
+        <Tab.Screen name='Info' component={TopInfo}/>
       </Tab.Navigator>
     </View>
   )

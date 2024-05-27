@@ -12,7 +12,8 @@ import { LoginScreen,
          HotelDetails,
          HotelList,
          HotelSearch,
-         SelectRoom
+         SelectRoom,
+         Payment
 } from './screens';
 import BottomTabNavigation from './navigation/BottomTabNavigation';
 import { useFonts } from 'expo-font';
@@ -55,6 +56,7 @@ function App() {
         <Stack.Screen name = "HotelList" component = {HotelList}/>
         <Stack.Screen name = "HotelSearch" component = {HotelSearch}/>
         <Stack.Screen name = "SelectRoom" component = {SelectRoom}/>
+        <Stack.Screen name = "Payment" component = {Payment}/>
       </Stack.Navigator>
     </NavigationContainer>
   );

@@ -15,6 +15,7 @@ import SelectRoom from './details/SelectRoom'
 import TopBooking from './top/TopBooking'
 import TopInfo from './top/TopInfo'
 import TopTrips from './top/TopTrips'
+import Payment from './profile/Payment'
 
 export {
     HomeScreen,
@@ -33,5 +34,6 @@ export {
     SelectRoom,
     TopBooking,
     TopInfo,
-    TopTrips
+    TopTrips,
+    Payment
 }

@@ -16,6 +16,8 @@ import PopularList from "./Country/PopularList";
 import HotelMap from "./Hotel/HotelMap";
 import ReviewsList from "./Hotel/ReviewsList";
 import ReviewTle from "./Titles/Reviews/ReviewTle"
+import ProfileTile from "./Reusable/ProfileTile";
+import SettingsTile from "./Titles/Settings/SettingsTile";
 
 export {
     ReusableText,
@@ -35,5 +37,7 @@ export {
     PopularList,
     HotelMap,
     ReviewsList,
-    ReviewTle
+    ReviewTle,
+    ProfileTile,
+    SettingsTile
 }
