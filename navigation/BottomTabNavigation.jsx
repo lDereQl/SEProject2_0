@@ -1,7 +1,7 @@
 import { View, Text } from 'react-native'
 import React from 'react'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
-import { HomeScreen, Location, Chat, Successful } from '../screens';
+import { HomeScreen, Location, Chat, Successful, Failed } from '../screens';
 import {Ionicons} from '@expo/vector-icons'
 import { COLORS } from '../constants/theme';
 import TopTap from './TopTap';

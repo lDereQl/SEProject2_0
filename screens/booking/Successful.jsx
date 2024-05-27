@@ -24,7 +24,51 @@ const Successful = ({navigation}) => {
           height={200}
           mode={"contain"}
         />
-        
+
+        <HeightSpacer height={40} />
+
+        <View style={{ alignItems: "center" }}>
+          <ReusableText
+            text={"Booking Successful"}
+            family={"medium"}
+            size={TEXT.xLarge}
+            color={COLORS.black}
+          />
+          <HeightSpacer height={20} />
+
+          <ReusableText
+            text={"You can find your booking details below"}
+            family={"regular"}
+            size={SIZES.medium}
+            color={COLORS.gray}
+          />
+          <HeightSpacer height={20} />
+        </View>
+        <View style={{ margin: 20 }}>
+          <ReusableText
+            text={"Room Details"}
+            family={"bold"}
+            size={SIZES.medium}
+            color={COLORS.dark}
+          />
+
+          <HeightSpacer height={20} />
+
+          <ReusableTile item={hotel}/>
+
+          <HeightSpacer height={40} />
+
+          <Button
+            onPress={() => navigation.navigate("Bottom")}
+            title={"Done"}
+            width={SIZES.width - 50}
+            backgroundColor={COLORS.green}
+            borderColor={COLORS.green}
+            borderWidth={0}
+            textColor={COLORS.white}
+          />
+
+        </View>
       </View>
     </View>
   )

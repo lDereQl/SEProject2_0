@@ -8,7 +8,7 @@ const TopInfo = ({navigation}) => {
 
       <ProfileTile title={"Personal Information"} icon={'user'}/>
       <ProfileTile title={"Payments"} icon={'creditcard'} onPress={() => navigation.navigate('Payment')}/>
-
+      <ProfileTile title={"Settings"} icon={'setting'} onPress={() => navigation.navigate('Settings')}/>
     </View>
   )
 }
