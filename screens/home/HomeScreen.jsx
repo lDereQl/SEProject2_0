@@ -24,9 +24,9 @@ const HomeScreen = ({ navigation }) => {
             />
 
             <TouchableOpacity style={home.box}
-              onPress={() => navigation.navigate("Settings")}>
+              onPress={() => navigation.navigate("HotelSearch")}>
               <AntDesign
-                name='setting'
+                name='search1'
                 size={26}
               />
             </TouchableOpacity>
