@@ -25,15 +25,15 @@ const SettingTile = ({ title, title1, onPress }) => {
             source={require("../../../assets/images/USA.png")}
             style={styles.image}
           />
-          <WidthSpacer width={5} />
+          <WidthSpacer width={5}/>
           <ReusableText
             text={"English"}
             family={"regular"}
             size={TEXT.large}
             color={COLORS.gray}
           />
-          <WidthSpacer width={5} />
-          <AntDesign name="right" size={20} color={COLORS.dark} />
+          <WidthSpacer width={5}/>
+          <AntDesign name="right" size={20} color={COLORS.dark}/>
         </View>
       ) : (
         <View style={reusable.rowWithSpace("flex-start")}>
@@ -43,8 +43,8 @@ const SettingTile = ({ title, title1, onPress }) => {
             size={TEXT.large}
             color={COLORS.gray}
           />
-          <WidthSpacer width={5} />
-          <AntDesign name="right" size={20} color={COLORS.dark} />
+          <WidthSpacer width={5}/>
+          <AntDesign name="right" size={20} color={COLORS.dark}/>
         </View>
       )}
     </TouchableOpacity>
