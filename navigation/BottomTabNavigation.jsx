@@ -5,6 +5,7 @@ import { HomeScreen, Location, Chat, Successful, Failed } from '../screens';
 import {Ionicons} from '@expo/vector-icons'
 import { COLORS } from '../constants/theme';
 import TopTap from './TopTap';
+import AuthTopTab from './AuthTopTab';
 
 const Tab = createBottomTabNavigator();
 
@@ -55,7 +56,7 @@ const BottomTabNavigation = () => {
         }}/>
 
         <Tab.Screen
-        name='Chat' component = {Successful} options={{
+        name='Chat' component = {AuthTopTab} options={{
             tabBarStyle: tabBarStyle,
             tabBarShowLabel: false,
             headerShown: false,
